@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Schedule for Llewelyn Jang - ljang - Fall, 2023</title>
+    <link rel="stylesheet" href="css/styleLab2.css">
+  </head>
+  <body>
+  <h1>Schedule for Llewelyn Jang - ljang - Fall, 2023</h1>
+  <h2>Table Terms and Definitions</h2>
+  <dl>
+    <dt>
+      How to define a table:
+    </dt>
+    <dd>
+      A structured set of data in rows and columns; it allows you to easily look up values that indicate some sort of connection. Use &lt;table&gt; tags to create a table. 
+      <ul>
+        <li>&lt;tr&gt; use table row element when making rows in a table; nest in the table</li>
+        <li>&lt;th&gt; use table header element when writing headers for the table; use in the first row of the table containing header information</li>
+        <li>&lt;td&gt; use table data element when putting in table content in each data cell; nest in the rows</li>
+        <li>&lt;thead&gt; use when grouping header content in an HTML table</li>
+        <li>&lt;tbody&gt; use when grouping body content in an HTML table</li>
+        <li>&lt;tfoot&gt; use when grouping footer content in an HTML table</li>
+        <li>&lt;caption&gt; use when defining a table caption, insert right after the &lt;table&gt; tag</li>
+      </ul>
+    </dd>
+    <dt>
+      Difference between colspan and rowspan:
+    </dt>
+    <dd>Colspan is an attribute that merges columns, allowing a single table cell to span the width of more than one cell or column. Rowspan is an attribute that merges rows, allowing a single table cell to span the height of more than one cell or row.</dd>
+    <br>
+    <dt>Difference between cell spacing and padding:</dt>
+    <dd>Cell spacing is the space between each cell while cell padding is the space between the cell border and the content within it.</dd>
+    <br>
+    <dt>How do you define table borders using CSS?</dt>
+    <dd>Define table borders with a "border" property with &lt;table&gt;, &lt;th&gt;, and &lt;td&gt; elements.</dd>
+    <br>
+    <dt>How do you control border widths using CSS?</dt>
+    <dd>Control border widths with a "border-width" property and set to a particular size with in, px, pt, cm, em, etc. For a single border, use the "border-collapse" property and the "collapse" value. </dd>
+  </dl>
+  <br>
+    <table border="1">
+      <caption class="caption">Llewelyn Jang - Fall 2023 Schedule</caption>
+      <!--header-->
+      <tr>
+        <th class="time">Time</th>
+        <th class="days">Mon</th>
+        <th class="days">Tues</th>
+        <th class="days">Wed</th>
+        <th class="days">Thurs</th>
+        <th class="days">Fri</th>
+        <th class="days">Sat-Sun</th>
+      </tr>
+      <!--9:30am--> 
+      <tr>
+        <th class="time">9:30</th>
+        <td>Breakfast</td>
+        <td>Breakfast</td>
+        <td>Breakfast</td>
+        <td>Breakfast</td>
+        <td>Breakfast</td>
+        <td rowspan="6">Sleep</td>
+      </tr> 
+      <!-- 10am-->
+      <tr>
+        <th class="time">10am</th>
+        <td rowspan="4" class ="VIS60">VIS 60 Lab</td>
+        <td rowspan="2">Get Ready</td>
+        <td rowspan="5">Homework/Study<br><img src="img/studying.webp" style= width:120px><br>In Dorm</td>
+        <td rowspan="2">Get Ready</td>
+        <td rowspan="2">Get Ready</td>
+      </tr>
+      <!-- 10:30am-->
+      <tr>
+        <th class="time">10:30</th>
+      </tr>
+      <!-- 11am-->
+      <tr>
+        <th class="time">11am</th>
+        <td rowspan="3" class ="MMW11">MMW  11 Lecture</td>
+        <td rowspan="3" class ="MMW11">MMW  11 Lecture</td>
+        <td rowspan="4" class ="VIS70">VIS 70N Lab</td>
+      </tr>
+      <!--11:30am-->
+      <tr>
+        <th class="time">11:30</th>
+      </tr>
+      <!-- 12pm-->
+      <tr>
+        <th class="time">12pm</th>
+        <td rowspan="2">Lunch</td>
+      </tr>
+      <!-- 12:30pm-->
+      <tr>
+        <th class="time">12:30</th>
+        <td>Lunch</td>
+        <td>Lunch</td>
+        <td>Lunch</td>
+        <td>Lunch</td>
+      </tr>
+      <!-- 1pm-->
+      <tr>
+        <th class="time">1pm</th>
+        <td colspan="6" rowspan="2">Call family<br><img src="img/callMom.jpg" style= width:120px></td>
+      </tr>
+      <!-- 1:30pm-->
+      <tr>
+        <th class="time">1:30</th>
+      </tr>
+      <!-- 2pm-->
+      <tr>
+        <th class="time">2pm</th>
+        <td rowspan="6">Homework/Study<br><img src="img/studying.webp" style= width:120px><br><a href="https://library.ucsd.edu/">Giesel Library</a></td>        
+        <td rowspan="3" class="COGS3">COGS 3 Lecture<br><a href="https://pages.ucsd.edu/~mboyle/COGS3/index.html">COGS 3 Website</a></td>
+        <td rowspan="2" class ="MMW11">MMW 11 Discussion</td>
+        <td rowspan="3" class="COGS3">COGS 3 Lecture<br><a href="https://pages.ucsd.edu/~mboyle/COGS3/index.html">COGS 3 Website</a></td>
+        <td>Lunch</td>
+        <td rowspan="5">Creative Writing<br><img src="img/writing.jpg" style= width:120px><br><a href="https://www.studiobinder.com/">StudioBinder</a></td>
+      </tr>
+      <!-- 2:30pm-->
+      <tr>
+        <th class="time">2:30</th>
+        <td rowspan="7">Homework/Study<br><img src="img/studying.webp" style= width:120px><br><a href="https://library.ucsd.edu/">Giesel Library</a></td>
+      </tr>
+      <!-- 3pm-->
+      <tr>
+        <th class="time">3pm</th>
+        <td rowspan="5">Homework/Study<br><img src="img/studying.webp" style= width:120px><br><a href="https://library.ucsd.edu/">Giesel Library</a></td>
+      </tr>
+      <!-- 3:30pm-->
+      <tr>
+        <th class="time">3:30</th>
+        <td rowspan="4" class ="VIS60">VIS 60 Lecture</td>
+        <td rowspan="4" class ="VIS60">VIS 60 Lecture</td>
+      </tr>
+      <!-- 4pm-->
+      <tr>
+        <th class="time">4pm</th>
+      </tr>
+      <!-- 4:30pm-->
+      <tr>
+        <th class="time">4:30</th>
+        <td rowspan="3">Homework/Study<br><img src="img/studying.webp" style= width:120px><br><a href="https://library.ucsd.edu/">Giesel Library</a></td>
+      </tr>
+      <!-- 5pm-->
+      <tr>
+        <th class="time">5pm</th>
+        <td rowspan="2" class="COGS3">COGS 3 Lab</td>
+      </tr>
+      <!-- 5:30pm-->
+      <tr>
+        <th class="time">5:30</th>
+        <td rowspan="2">Running at the gym<br><img src="img/runner.jpg" style = "width: 120px"><br><a href="https://recreation.ucsd.edu/">RIMAC</a></td>
+        <td>Bible Study<br><img src="img/bible.png" style = "width: 120px"><br><a href="https://collegiate.navigators.org/ucsd">Navigators</a></td>
+        <td rowspan="2">Running at the gym<br><img src="img/runner.jpg" style = "width: 120px"><br><a href="https://recreation.ucsd.edu/">RIMAC</a></td>
+      </tr>
+      <!-- 6pm-->
+      <tr>
+        <th class="time">6pm</th>
+        <td>Shower</td>
+        <td>Dinner</td>
+        <td>Dinner</td>
+        <td rowspan="2">Dinner</td>
+      </tr>
+      <!-- 6:30pm-->
+      <tr>
+        <th class="time">6:30</th>
+        <td rowspan="6" class="VIS70">VIS 70N Lecture</td>
+        <td>Shower</td>
+        <td>Shower</td>
+        <td>Shower</td>
+        <td>Shower</td>
+      </tr>
+      <!-- 7pm-->
+      <tr>
+        <th class="time">7pm</th>
+        <td rowspan="2">Dinner</td>
+        <td rowspan="6">Homework/Study<br><img src="img/studying.webp" style= width:120px><br><a href="https://library.ucsd.edu/">Giesel Library</a></td>
+        <td rowspan="2">Dinner</td>
+        <td rowspan="6">Creative Writing<br><img src="img/writing.jpg" style= width:120px><br><a href="https://www.studiobinder.com/">StudioBinder</a></td>
+        <td rowspan="3">Homework/Study<br><img src="img/studying.webp" style= width:120px><br><a href="https://library.ucsd.edu/">Giesel Library</a></td>
+      </tr>
+      <!-- 7:30pm-->
+      <tr>
+        <th class="time">7:30</th>
+      </tr>
+      <!-- 8pm-->
+      <tr>
+        <th class="time">8pm</th>
+        <td rowspan="4">Homework/Study<br><img src="img/studying.webp" style= width:120px><br><a href="https://library.ucsd.edu/">Giesel Library</a></td>
+        <td rowspan="4">Homework/Study<br><img src="img/studying.webp" style= width:120px><br><a href="https://library.ucsd.edu/">Giesel Library</a></td>
+      </tr>
+      <!-- 8:30pm-->
+      <tr>
+        <th class="time">8:30</th>
+        <td>Shower</td>
+      </tr>
+      <!-- 9pm-->
+      <tr>
+        <th class="time">9pm</th>
+        <td rowspan="3">Sleep</td>
+      </tr>
+      <!-- 9:30pm-->
+      <tr>
+        <th class="time">9:30</th>
+        <td>Dinner</td>
+      </tr>
+      <!-- 10pm-->
+      <tr>
+        <th class="time">10pm</th>
+        <td>Sleep</td>
+        <td>Sleep</td>
+        <td>Sleep</td>
+        <td>Sleep</td>
+        <td>Sleep</td>
+      </tr>
+    </table>
+  </body>
+</html>
